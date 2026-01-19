@@ -26,6 +26,7 @@ color: white;
 font-size: 1rem;
 font-weight: 400;
 }
+
 .Gradient-color{
   background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251 , 9, 180, 1),rgba(145, 0, 248, 1));
 }
@@ -156,6 +157,34 @@ padding: 4px;
 .lift-btn:hover{
   color: black;
 }
+
+/* all  hover style  */
+.hero-circle-container{
+    position: relative;
+  width: 450px;
+  transition: transform 0.4s ease;
+}
+.circle {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+.hero-circle-container:hover .microphone-overly{
+  transform: scale(1.5);
+
+}
+.nav-item{
+  transition: transform 0.3s ease;
+}
+.nav-item:hover{
+ transform: scale(1.5);
+ background-color: brown;
+}
+.nav-btn{
+  transition: transform 0.3s ease;
+}
+.nav-btn:hover {
+  transform: scale(1.2);
+}
 /* this is responsive style  */
 @media screen and (max-width:576px){
   .nav-item,
@@ -221,13 +250,59 @@ display: none;
   }
   .navbar{
 display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 16px 20px;
-  gap: 4px;
+  gap: 8px;
   flex-direction: row;
   }
-  
+  .brand-logo img{
+    width: 100%;
+  }
+  #bannar {
+    min-height: 650px;
+    padding: 0 32px;
+  }
+
+  .banner-container {
+    padding: 60px 80px;
+    text-align: center;
+  }
+
+  .banner-container h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+
+  .banner-btn {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .lift-btn,
+  .right-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .hero-circle-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .microphone-overly {
+    top: 80px;
+    left: 100px;
+    width: 100px;
+  }
+
+  #beg {
+    top: 18px;
+    left: 245px;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
 }
 
 @media screen and (min-width:993px) {
