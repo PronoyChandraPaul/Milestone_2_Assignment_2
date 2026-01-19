@@ -80,7 +80,7 @@ font-weight: 400;
 #bannar{
   background-image: url(./assets/hero-bg.png);
 width: 100%;
-min-height: 911px;
+min-height: 991px;
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
@@ -88,7 +88,7 @@ min-height: 911px;
 .banner-container{
 display: block;
 justify-items: center;
-padding: 80px 550px 300px 600px;
+padding: 100px 600px 300px 600px;
 }
 
 .hero-circle-container{
@@ -157,7 +157,43 @@ padding: 4px;
 .lift-btn:hover{
   color: black;
 }
-
+/* this is about section style  */
+.about-container{
+align-items: center;
+padding: 10px 200px 120px 200px;
+gap: 16px;
+}
+.about-container h1{
+  text-align: center;
+}
+.about-content{
+  justify-items: center;
+}
+.about-content p{
+width: 50%;
+text-align: center;
+opacity: 0.3;
+}
+.border-line{
+border: 1px solid #424242;
+width: 1400px;
+margin: 0 auto;
+margin-top: 90px;
+}
+.about-number{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+text-align: center;
+padding-top: 70px;
+}
+.number h1{
+  color: #00FF88;
+  font-size: 48px;
+  font-weight: 900;
+}
+.number p{
+  opacity: 0.8;
+}
 /* all  hover style  */
 .hero-circle-container{
     position: relative;
@@ -239,7 +275,34 @@ display: none;
     font-size: 0.75rem;
     padding: 3px 6px;
   }
+  .about-container {
+    padding: 5px 16px 60px 16px;
+    gap: 12px;
+  }
 
+  .about-content p {
+    width: 100%;
+    font-size: 0.9rem;
+    opacity: 0.3;
+  }
+
+  .border-line {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .about-number {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding-top: 40px;
+  }
+
+  .number h1 {
+    font-size: 32px;
+  }
+  .number p{
+    opacity: 0.8;
+  }
 }
 
 
@@ -262,6 +325,7 @@ display: flex;
   #bannar {
     min-height: 650px;
     padding: 0 32px;
+
   }
 
   .banner-container {
@@ -302,6 +366,34 @@ display: flex;
     left: 245px;
     font-size: 0.85rem;
     padding: 4px 8px;
+  }
+    .about-container {
+    padding: 5px 60px 100px 60px;
+    gap: 14px;
+  }
+
+  .about-content p {
+    width: 70%;
+    font-size: 1rem;
+    opacity: 0.3;
+  }
+
+  .border-line {
+    width: 80%;
+    margin-top: 70px;
+  }
+
+  .about-number {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding-top: 60px;
+  }
+
+  .number h1 {
+    font-size: 40px;
+  }
+  .number p{
+    opacity: 0.8;
   }
 }
 
