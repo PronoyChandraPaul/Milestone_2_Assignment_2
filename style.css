@@ -271,6 +271,37 @@ width: 25px;
 .featured-content h1{
 color: #00FF88;
 }
+/* this challeng section  */
+.challeng{
+  padding: 120px 200px;
+}
+.challeng h1{
+  text-align: center;
+}
+.challeng-container-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.challeng-container{
+  display: flex;
+  gap: 24px;
+  border: 2px solid rgba(37, 13, 68, 1);;
+  border-radius: 50px;
+  box-shadow: 0 6px 50px 0 #000000e2;
+  padding: 30px;
+}
+
+.challeng-container p{
+  opacity: 0.8;
+}
+.challeng-container-item .icon img{
+  padding: 10px;
+  
+}
+
 /* all  hover style  */
 .hero-circle-container{
     position: relative;
@@ -316,7 +347,7 @@ display: none;
 
   #bannar {
     min-height: 420px;
-    padding: 0 16px;
+    
   }
 
   .banner-container {
@@ -426,6 +457,31 @@ display: none;
     padding-left: 10px;
     width: 20px;
   }
+  .challeng {
+    padding: 60px 16px;
+  }
+
+  .challeng h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .challeng-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .challeng-container-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .challeng-container-item .icon img {
+    padding: 6px;
+    width: 40px;
+  }
 }
 
 
@@ -447,7 +503,7 @@ display: flex;
   }
   #bannar {
     min-height: 650px;
-    padding: 0 32px;
+    
 
   }
 
@@ -580,6 +636,30 @@ display: flex;
   .shadow {
     border-radius: 30px;
   }
+  .challeng {
+    padding: 90px 60px;
+  }
+
+  .challeng h1 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .challeng-container {
+    gap: 20px;
+    padding: 24px;
+    border-radius: 30px;
+  }
+
+  .challeng-container-item {
+    align-items: flex-start;
+  }
+
+  .challeng-container-item .icon img {
+    padding: 8px;
+    width: 48px;
+  }
+
 }
 
 @media screen and (min-width:992px) {
@@ -588,7 +668,7 @@ display: flex;
   }
     #bannar {
     min-height: 650px;
-    padding: 0 32px;
+    
   }
 
   .banner-container {
