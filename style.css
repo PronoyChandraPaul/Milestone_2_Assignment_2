@@ -88,15 +88,17 @@ min-height: 991px;
 .banner-container{
 display: block;
 justify-items: center;
-padding: 100px 600px 300px 600px;
+padding: 100px 600px 0px 600px;
 }
 
 .hero-circle-container{
   position: relative;
   width: 450px;
+  margin: 0 auto;
 }
 .circle{
   width: 100%;
+margin: 0 auto;
 }
 .microphone-overly{
   position: absolute;
@@ -160,7 +162,7 @@ padding: 4px;
 /* this is about section style  */
 .about-container{
 align-items: center;
-padding: 10px 200px 120px 200px;
+padding: 10px 200px 100px 200px;
 gap: 16px;
 }
 .about-container h1{
@@ -197,24 +199,30 @@ padding-top: 70px;
 /* this is choose section style  */
 .choose{
   padding: 100px 200px;
-  
+
 }
 .choose-container{
   display: grid;
-  gap: 30px;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3, 1fr);
- 
+   gap: 24px;
+
 }
 
 .choose-heading{
   text-align: center;
+  
 }
 .choose-item{
   
   background-color: rgba(53, 17, 101, 0.4);
- padding: 40px;
+ padding: 40px 40px 0px 40px;
  border-radius: 30px;
+
+}
+.lift-grid img{
+padding-top: 150px;
+
 }
 .choose-item p{
   opacity: 0.6;
@@ -228,7 +236,41 @@ padding-top: 70px;
   grid-column: span 2;
   grid-row: span 1;
 }
+/* .this is featured section style  */
+.featured {
+  padding: 200px 100px 120px;
+}
+.featured h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
+.featured-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.featured-content iframe {
+  border-radius: 50px;
+  
+}
+
+.shadow{
+  border: 2px solid rgba(37, 13, 68, 1);;
+  border-radius: 50px;
+  box-shadow: 0 6px 50px 0 #000000e2;
+  justify-items: flex-start;
+}
+.featured-content img {
+padding-left: 20px;
+width: 25px;
+}
+.featured-content h1{
+color: #00FF88;
+}
 /* all  hover style  */
 .hero-circle-container{
     position: relative;
@@ -355,6 +397,35 @@ display: none;
   .choose-item {
     padding: 24px;
   }
+    .featured {
+    padding: 80px 16px 60px;
+  }
+
+  .featured h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .featured-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .featured-content iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+  }
+
+  .shadow {
+    border-radius: 20px;
+    box-shadow: 0 4px 25px 0 #000000b3;
+  }
+
+  .featured-content img {
+    padding-left: 10px;
+    width: 20px;
+  }
 }
 
 
@@ -461,15 +532,126 @@ display: flex;
     grid-row: span 1;
   }
 
-  .big-cols {
-    grid-column: span 2;
-    grid-row: span 1;
+    .featured {
+    padding: 120px 40px 80px;
   }
-  
+
+  .featured h1 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .featured-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .featured-content iframe {
+    width: 420px;
+    height: 260px;
+    border-radius: 30px;
+  }
+
+  .shadow {
+    border-radius: 30px;
+  }
+    .featured {
+    padding: 120px 40px 80px;
+  }
+
+  .featured h1 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .featured-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .featured-content iframe {
+    width: 420px;
+    height: 260px;
+    border-radius: 30px;
+  }
+
+  .shadow {
+    border-radius: 30px;
+  }
 }
 
-@media screen and (min-width:993px) {
+@media screen and (min-width:992px) {
   .hamburger-icon{
     display: none;
+  }
+    #bannar {
+    min-height: 650px;
+    padding: 0 32px;
+  }
+
+  .banner-container {
+    padding: 60px 80px;
+    text-align: center;
+  }
+
+  .banner-container h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+
+  .banner-btn {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .lift-btn,
+  .right-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .hero-circle-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .microphone-overly {
+    top: 80px;
+    left: 100px;
+    width: 100px;
+  }
+
+  #beg {
+    top: 18px;
+    left: 245px;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+   .featured {
+    padding: 200px 100px 120px;
+  }
+
+  .featured h1 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+  }
+
+  .featured-container {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+  }
+
+  .featured-content iframe {
+    width: 520px;
+    height: 320px;
+    border-radius: 50px;
+  }
+
+  .shadow {
+    border-radius: 50px;
+    box-shadow: 0 6px 50px 0 #000000e2;
   }
 }
